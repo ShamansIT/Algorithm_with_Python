@@ -1,3 +1,13 @@
+"""
+Knuth-Morris-Pratt (KMP) Algorithm.
+The Knuth-Morris-Pratt algorithm is a string searching method that seeks
+the occurrence of a "word" W within a main "text string" S by employing
+the observation that when a mismatch occurs, the word itself embodies 
+sufficient information to dictate where the next match could begin, 
+thus bypassing re-examination of previously matched characters.
+"""
+# Created by: Serhii Spitsyn
+
 text_find = "asasad"  # Fragment text for finding
 
 # Create Pi array code agorithm for finding text
