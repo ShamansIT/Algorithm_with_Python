@@ -1,12 +1,12 @@
-textFind = "asasad"  # Fragment text for finding
+text_find = "asasad"  # Fragment text for finding
 
 # Create Pi array code agorithm for finding text
-pArr = [0] * len(textFind)
+pArr = [0] * len(text_find)
 j = 0
 i = 1
 
-while i < len(textFind):
-    if textFind[j] == textFind[i]:
+while i < len(text_find):
+    if text_find[j] == text_find[i]:
         pArr[i] = j + 1
         i += 1
         j += 1
@@ -18,22 +18,22 @@ while i < len(textFind):
             j = pArr[j-1]
 
 
-textSearch = "asasawd asasadwsa"  # Text in which the fragment will be searched
+text_search = "asasawd asasadwsa"  # Text in which the fragment will be searched
 
-m = len(textFind)
-n = len(textSearch)
+m = len(text_find)
+n = len(text_search)
 
 i = 0
 j = 0
 
 # Searching algorithm
 while i < n:
-    if textSearch[i] == textFind[j]:
+    if text_search[i] == text_find[j]:
         i += 1
         j += 1
         if j == m:
             print(
-                f"Fragment exist in text. Start from index [{i-len(textFind)}] to [{i}]")
+                f"Fragment exist in text. Start from index [{i-len(text_find)}] to [{i}]")
             break
     else:
         if j > 0:
